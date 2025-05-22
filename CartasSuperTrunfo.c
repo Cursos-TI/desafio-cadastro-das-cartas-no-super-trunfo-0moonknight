@@ -16,12 +16,12 @@ int main(){
 */
 
     printf("Carta 1: \n Digite o estado da carta: \n");
-    scanf(" %c", &estado1);
+    scanf(" %c", &estado1); // <- Espaços antes do especificar de formato para não pular respostas.
     printf("Digite o código da carta: \n");
     scanf(" %s", &codigo1);
-    getchar();
+    getchar(); // <- getchar Para limpar o buffer e evitar que informações se misturem.
     printf("Digite o nome da cidade da carta: \n");
-    scanf(" %[^\n]", cidade1);
+    scanf(" %[^\n]", cidade1); // <- %[^\n] Pra garantir a leitura de cidade com mais de uma palavra como "São Paulo".
     printf("Digite a população da cidade: \n");
     scanf(" %d", &populcao1);
     printf("Digite a área da cidade: \n");
@@ -35,9 +35,9 @@ int main(){
     scanf(" %c", &estado2);
     printf("Digite o código da carta: \n");
     scanf(" %s", &codigo2);
-    getchar();
+    getchar(); // <- Para limpar o buffer e evitar que informações se misturem.
     printf("Digite o nome da cidade da carta: \n");
-    scanf(" %[^\n]", cidade2);
+    scanf(" %[^\n]", cidade2); // <- %[^\n] Pra garantir a leitura de cidade com mais de uma palavra como "São Paulo".
     printf("Digite a população da cidade: \n");
     scanf(" %d", &populcao2);
     printf("Digite a área da cidade: \n");
@@ -52,9 +52,9 @@ int main(){
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
     printf("População: %d\n", populcao1);
-    printf("Área: %.2f Km²\n", area1);
+    printf("Área: %.2f Km²\n", area1); // <- %.2f Para que seja impresso duas casas decimais após a virgula ou ponto.
     printf("PIB: %.2f bilhões de reais\n", pib1);
-    printf("Número de Pontos Turisticos: %d\n\n\n", pontos1);
+    printf("Número de Pontos Turisticos: %d\n\n\n", pontos1); // <- Atenção aos espaços para que não fique bagunçado.
 
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
